@@ -1,0 +1,697 @@
+@font-face {
+
+	font-family: 'xtreme_chromeregular';
+	src: url('../fonts/xtrchr-webfont.eot');
+	src: url('../fonts/xtrchr-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/xtrchr-webfont.woff') format('woff'),
+            url('../fonts/xtrchr-webfont.ttf') format('truetype'),
+            url('../fonts/xtrchr-webfont.svg#xtreme_chromeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/************************************************************************************
+RESET
+*************************************************************************************/
+
+html, body, address, blockquote, div, dl, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset, input, label {
+
+    margin: 0;
+    padding: 0;
+}
+
+img {
+	
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 hack */
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, form, main { 
+
+    display: block;
+}
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+
+body {
+
+    background: #FFFFFF url(../img/texture.jpg) fixed;
+    color: #000000;
+    width: 100%;
+}
+
+a {
+
+    color: #FFFFFF;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+
+    text-decoration: underline;
+}
+
+p {
+
+    margin: 0 0 1.2em;
+    padding: 0;
+}
+
+ul, ol {
+
+    margin: 1em 0 1.4em 24px;
+    padding: 0;
+    line-height: 140%;
+}
+
+li {
+
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    line-height: 1.4em;
+    margin: 20px 0 .4em;
+    color: #000000;
+}
+
+h1 {
+
+    font-size: 2em;
+}
+
+h2 {
+
+    font-size: 1.6em;
+}
+
+h3 {
+
+    font-size: 1.4em;
+}
+
+h4 {
+
+    font-size: 1.2em;
+}
+
+h5 {
+
+    font-size: 1.1em;
+}
+
+h6 {
+
+    font-size: 1em;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+
+header {
+
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    background: #FFFFFF url(../img/network.jpg) 50% 35% no-repeat;
+}
+
+#header-content {
+    
+    width: 96%;
+    height: 120px;
+    padding: 10px 2%;
+}
+
+#header-content-left {
+    
+    width: 70%;
+    float: left;
+}
+
+#header-content-right {
+    
+    width: 30%;
+    float: left;
+}
+
+#site-logo {
+
+    width: 100%;
+}
+
+#site-logo a {
+
+    font: bold 48px "xtreme_chromeregular", Helvetica, sans-serif;
+    color: #18B432;
+    text-decoration: none;
+}
+
+#site-logo a:hover {
+	
+    color: #474747;
+}
+
+#site-description {
+
+    width: 100%;
+    margin-top: 0;
+    font: italic 100%/130% "Times New Roman", Times, serif;
+    color: #000000;
+}
+
+#site-image {
+
+    width: auto;
+    height: 120px;
+    float: right;
+    margin: 0;	
+}
+
+/************************************************************************************
+MAIN NAVIGATION
+*************************************************************************************/
+
+#main-nav {
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #18B432;
+}
+
+#main-nav li {
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+#main-nav li.nav_item {
+    
+    width: 22%;
+    float: right;
+}
+
+#main-nav li.nav_item:first-child {
+    
+    float: left;
+}
+
+#main-nav a {
+
+    line-height: 100%;
+    font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+    padding: 14px 15px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+#main-nav a:hover {
+
+    color: #FFFFFF;
+    background: #474747;
+}
+
+/************************************************************************************
+CONTENT
+*************************************************************************************/
+
+main {
+
+    width: 100%;
+    min-height: 480px;
+    padding-top: 184px;
+}
+main#popup {
+
+    min-height: 0;
+    padding-top: 0;
+}
+
+#content {
+    
+    width: 78%;
+    float: right;
+    min-height: 550px;
+    margin-left: 18%;
+    padding: 30px 0;
+    background: #FFFFFF;
+    border-left: 2px solid #9F9FA2;
+}
+#popup #content {
+    
+    width: 100%;
+    min-height: 300px;
+}
+
+.post-title {
+
+    margin: 20px 0;
+    padding: 0;
+    color: #18B432;
+    text-align: center;
+    font: bold 38px "xtreme_chromeregular", Arial, Helvetica, sans-serif;
+}
+
+.post-title a {
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.post-meta {
+
+    margin: 0 0 10px;
+    font-size: 90%;
+}
+
+.post-image {
+	
+    margin: 0 0 15px;
+}
+
+#content a {
+    
+    color: #000000;
+}
+
+/************************************************************************************
+SIDEBAR
+*************************************************************************************/
+
+#sidebar {
+
+    width: 20%;
+    min-width: 170px;
+    position: fixed;
+    text-align: center;
+    margin: 30px 0;
+    padding: 1%;
+}
+
+.widget {
+    
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #474747;
+}
+
+.widget:last-child {
+    
+    border-bottom: none;
+}
+
+.widgettitle {
+
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #18B432;
+    font-size: 1.8em;
+}
+
+.widget ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+.widget li {
+
+    margin: 0 auto;
+    padding: 6px 0;
+    list-style: none;
+    clear: both;
+}
+
+.widget li a {
+    
+    color: #000000;
+}
+
+.widget li a:hover {
+    
+    color: #18B432;
+    text-decoration: none;
+}
+
+.widget ul:last-child, li:last-child {
+
+    border-bottom: none;
+}
+
+#commercial_speech {
+    
+    text-align: center;
+}
+
+#commercial_speech span {
+    
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#stats_speech, #community_speech {
+    
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#stats_speech span {
+    
+    color: #18B432;
+}
+
+#rabbit {
+    
+    width: 80%;
+    height: auto;
+}
+
+/************************************************************************************
+FORM
+*************************************************************************************/
+
+.button {
+
+    width: 110px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #18B432;
+}
+
+.button:hover, .button#editP:hover {
+	
+    cursor:pointer;
+    background: #474747;
+}
+
+#register_form {
+    
+    width: 100%;
+    margin: 20px 0 30px 0;
+    display: inline-block;
+}
+
+#register_form ul, #register_form li {
+    
+    width: 80%;
+    margin: 0 10%;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+#register_form li {
+    
+    margin-bottom: 20px;
+}
+
+#register_form label, #register_form input {
+    
+    font-size: 18px;
+}
+
+#register_form label {
+    
+    width: 27%;
+    float: left;
+    margin-right: 2%;
+    text-align: left;
+    line-height: 30px;
+}
+
+#register_form label span {
+    
+    font-size: 14px;
+}
+
+#register_form input[type="text"],#register_form input[type="email"], #register_form input[type="password"] {
+    
+    width: 70%;
+    float: left;
+    line-height: 26px;
+}
+
+
+#register_form input[type="submit"] {
+    
+    width: 50%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+#message_form {
+    
+    width: 90%;
+    margin: 30px 5%;
+    display: inline-block;
+}
+
+/************************************************************************************
+OTHERS
+*************************************************************************************/
+
+a#add-contact {
+    
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    color: #FFFFFF;
+    background: #18B432;
+}
+
+a#add-contact:hover {
+    
+    text-decoration: none;
+    background: #474747;
+}
+
+#contact-list {
+    
+    width: 90%;
+    margin: 30px 5%;
+}
+
+#contact-list li {
+    
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 20px 0;
+    padding: 3px 0;
+    line-height: 30px;
+    list-style: none;
+    border-bottom: 1px solid #9F9FA2;
+}
+
+#contact-list li a, #contact-list li span {
+    
+    font-size: 24px;
+    display: inline-block;
+}
+
+#contact-list li a:hover {
+    
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#contact-list li img {
+    
+    width: auto;
+    height: 24px;
+    margin-right: 20px;  
+}
+
+#contact-list li span.details {
+    
+    margin-left: 56px;
+    font-size: 18px;
+}
+
+#contact-list .contact-delete, #contact-list .contact-edit {
+    
+    float: right;
+    margin-left: 30px;
+}
+
+#conversation_content {
+    
+    width: 90%;
+    margin: 30px 5%;
+    display: inline-block;
+}
+
+#messages {
+    
+    width: 100%;
+    height: 300px;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+#messages li {
+    
+    width: 96%;
+    padding: 0 2%;
+    list-style: none;
+    display: inline-block;
+}
+
+.my_message {
+    
+    float: right;
+    padding: 2px 15px;
+    color: #FFFFFF;
+    background: #18B432;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.message {
+    
+    float: left;
+    padding: 2px 15px;
+    color: #000000;
+    background: #EEEEEE;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#message_text {
+    
+    width: 88%;
+    height: 20px;
+    float: left
+}
+
+messages .button {
+    
+    width: 10%;
+    float: right;
+}
+
+#message_form_top {
+    
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#message_to {
+    
+    width: 80%;
+    height: 30px;
+    float: left;
+}
+
+#message_to_selector {
+    
+    width: 19%;
+    height: 36px;
+    float: right;
+}
+
+#message_form_content {
+    
+    text-align: center;
+}
+
+#message_content {
+    
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+#access_refused {
+    
+    text-align: center;
+}
+
+#access_refused span {
+    
+    font-size: 50px;
+    font-weight: bold;
+    color: #18B432;
+}
+
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+
+footer {
+
+    clear: both;
+    width: 96%;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 2% 5px;
+    background: #18B432;
+}
+
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+
+.clearfix:after { 
+	
+    visibility: hidden; 
+    display: block; 
+    font-size: 0; 
+    content: " "; 
+    clear: both; 
+    height: 0; 
+}
+
+.clearfix { 
+	
+    display: block; 
+    zoom: 1; 
+}
+
+/**************************
+ERROR
+*******************/
+
+#error-display {
+
+    width: 100%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+#error-dispay p {
+    
+    color: #FF0000;
+    text-align: center;
+}
